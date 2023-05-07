@@ -51,6 +51,6 @@ describe("Create product use case", () => {
 
     await expect(async () => {
       await useCase.execute(input);
-    }).rejects.toThrow("product: price must be greater than 0");
+    }).rejects.toThrow("product: price must be a positive number");
   });
 });
